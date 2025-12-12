@@ -2,8 +2,8 @@ const TelegramBot = require('node-telegram-bot-api');
 const cron = require('node-cron');
 
 // --- CONFIGURATION ---
-const TOKEN = '8402932181:AAHApCTN34h20ZtYVamIziiTKsFxXruwo-g'; // Paste your Bot Token
-const CHAT_ID = '322614612'; // Paste your Chat ID
+const TOKEN = process.env.BOT_TOKEN; // Paste your Bot Token
+const CHAT_ID = process.env.CHAT_ID; // Paste your Chat ID
 
 // --- MESSAGE VARIATIONS ---
 const variations = [
